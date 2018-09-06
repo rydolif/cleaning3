@@ -1,0 +1,132 @@
+.our-services
+	width: 100%
+	position: relative
+	background: url("../../img/bg-our.png") no-repeat top center
+	background-size: cover
+	padding-top: 112px
+	padding-bottom: 90px
+	+r(992)
+		padding-top: 40px
+		padding-bottom: 40px
+	+r(600)
+		padding: 40px 20px
+	&__tile
+		.tile__block
+			position: relative
+			border-radius: 8px
+			box-shadow: 5px 8.66px 30px 0 rgba(152, 198, 210, 0.25)
+			padding: 30px 30px 90px
+			margin: 0 auto 30px
+			color: $main-color
+			background: #ffffff no-repeat
+			overflow-y: hidden
+			text-overflow: ellipsis
+			+r(425)
+				margin-bottom: 20px
+			&_one
+				background: url("../img/m1.png") no-repeat center
+				background-size: cover
+			&_two
+				background: url("../img/m2.png") no-repeat center
+				background-size: cover
+				+r(770)
+					margin-right: 0
+				+r(576)
+					margin-right: auto
+			&_three
+				background: url("../img/m3.png") no-repeat center
+				background-size: cover
+				+r(770)
+					margin-left: 0
+				+r(576)
+					margin-left: auto
+			&_four
+				background: url("../img/m4.png") no-repeat center
+				background-size: cover
+				+r(770)
+					margin-right: 0
+				+r(576)
+					margin-right: auto
+			&_five
+				background: url("../img/m5.png") no-repeat center
+				background-size: cover
+				+r(770)
+					margin-left: 0
+				+r(576)
+					margin-left: auto
+			&_six
+				background: url("../img/m6.png") no-repeat center
+				background-size: cover
+				+r(992)
+					margin-bottom: 0
+				+r(425)
+					margin-bottom: 0
+			&_two, &_four, &_five
+				color: #fff
+
+			h5
+				font-size: 20px
+				letter-spacing: 0.01em
+				font-family: $semibold-font
+				margin-bottom: 20px
+			ul
+				li
+					font-size: 14px
+					letter-spacing: 0.01em
+					line-height: 22px
+					font-family: $medium-font
+					font-weight: 500
+					position: relative
+					padding-left: 8px
+					&::before
+						content: ''
+						width: 3px
+						height: 3px
+						position: absolute
+						background: #03a6f1
+						border-radius: 3px
+						top: 8px
+						left: 0
+			.btn
+				border-radius: 8px
+				background-color: rgb(255, 255, 255)
+				box-shadow: 7.5px 12.99px 25px 0px rgba(0, 0, 0, 0.2)
+				display: inline-block
+				height: 42px
+				width: 150px
+				position: absolute
+				right: 60px
+				bottom: 30px
+				transition: all .5s
+				text-align: center
+				+r(475)
+					right: 50%
+					transform: translateX(50%)
+				a
+					padding: 10px
+					display: inline-block
+					font-family: $bold-font
+					font-weight: 800
+					letter-spacing: 0.02em
+					line-height: 24px
+					font-size: 14px
+					color: #2c3544
+					transition: all .6s
+				&:hover
+					background: rgb(237, 28, 36)
+					transition: all .6px
+					transform: translateY(4px)
+					box-shadow: 7.5px 12.99px 25px 0px rgba(0, 0, 0, 0.6)
+					a
+						color: #ffffff
+			&_long
+				width: 100%
+				height: 270px
+				+r(1199)
+					height: auto
+			&_short
+				width: 100%
+				height: 460px
+				+r(1199)
+					height: auto
+

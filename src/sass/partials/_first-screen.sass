@@ -1,0 +1,133 @@
+.first-screen
+	min-height: 570px
+	width: 100%
+	background: url("../img/bnr.png") no-repeat center
+	background-size: cover
+	padding-top: 107px
+	padding-bottom: 60px
+	position: relative
+	text-align: center
+	+r(992)
+		padding-top: 40px
+		padding-bottom: 30px
+		min-height: auto
+
+	h1,h2
+		font-size: 36px
+		color: $main-color
+		max-width: 700px
+		margin: 0 auto 37px
+		+r(1200)
+			padding-left: 0
+		+r(768)
+			font-size: 30px
+		+r(425)
+			font-size: 24px
+	h3
+		font-size: 24px
+		line-height: 36px
+		letter-spacing: 0.01em
+		color: #6a707a
+		margin: 0 auto 115px
+		max-width: 750px
+		+r(1200)
+			padding-left: 0
+		+r(768)
+			font-size: 20px
+			line-height: 26px
+			margin-bottom: 50px
+		+r(530)
+			font-size: 18px
+		+r(480)
+			font-size: 16px
+		+r(425)
+			font-size: 14px
+	&__buttons
+		display: flex
+		justify-content: center
+		margin-bottom: 50px
+		+r(992)
+			margin-bottom: 0
+		+r(767)
+			flex-direction: column
+			align-items: center
+		a
+			border-radius: 24px
+			background-color: rgb(3, 166, 241)
+			box-shadow: 10px 17.321px 30px 0 rgba(73, 175, 236, 0.3)
+			width: 200px
+			height: 48px
+			padding: 14px
+			font-size: 15px
+			font-family: $bold-font
+			letter-spacing: 0.006em
+			color: #fefefe
+			margin: 0 16px
+			transition: all .3s
+			margin-bottom: 25px
+			&:last-child
+				background-color: rgb(0, 36, 124)
+				box-shadow: 10px 17.321px 30px 0 rgba(0, 36, 124, 0.3)
+				+r(900)
+					margin-bottom: 50px
+			&:hover
+				transform: translateY(3px)
+				box-shadow: 10px 17.321px 30px 0 rgba(73, 175, 236, 0.6)
+				&:last-child
+					box-shadow: 10px 17.321px 30px 0 rgba(0, 36, 124, 0.6)
+
+	&__nav
+		color: $main-color
+		z-index: 30
+		background: linear-gradient(to right, rgba(3, 166, 241, .3), rgba(3, 166, 241, 0))
+		margin-top: 50px
+		+r(1199)
+			display: none
+
+		li
+			font-size: 20px
+			margin: 10px auto
+			text-align: left
+			position: relative
+			padding-left: 20px
+			transition: all .3s
+		.slick-current
+			li
+				color: #03a6f1
+				&::before
+					content: ''
+					width: 5px
+					height: 5px
+					position: absolute
+					background: #03a6f1
+					border-radius: 3px
+					top: 8px
+					left: 8px
+	&__elem
+		.slick-prev, .slick-next
+			background: rgba(3, 166, 241, .2)
+			width: 36px
+			height: 36px
+			border: 1px rgba(3, 166, 241, .2) solid
+			border-radius: 50%
+			top: 50%
+			transform: translateY(-50%)
+			+r(600)
+				top: 95%
+				transform: translateY(-5%)
+		.slick-prev
+			transform: translateX(-5px) translateY(-50%)
+			&::before
+				opacity: 1
+				content: url("../../img/prev_d.svg")
+			+r(600)
+				left: 35%
+
+		.slick-next
+			transform: translateX(-5px) translateY(-50%)
+			&::before
+				opacity: 1
+				content: url("../../img/next_d.svg")
+			+r(600)
+				right: 35%
+

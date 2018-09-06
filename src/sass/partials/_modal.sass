@@ -1,0 +1,77 @@
+.modal-form
+	padding-top: 10px
+	width: 400px
+	padding: 10px
+	background: #fff
+	margin: 0 auto
+	border: 5px solid grey
+	+r(420)
+		width: 300px
+	a
+		color: $main-color
+		&:hover
+			color: red
+	h5
+		text-align: center
+		font-size: 28px
+		line-height: 20px
+		color: $main-color
+		padding-bottom: 30px
+		strong
+			font-size: 16px
+			color: #7b818a
+	.main-form
+		&__form
+			&_main
+				margin: 20px 0
+			&_flex
+				padding: 0
+			&_wrapper
+				margin-bottom: 0
+			&_checkbox
+				strong
+					&::after
+						left: 5px
+						top: 2px
+						width: 5px
+						height: 9px
+						border: solid #03a6f1
+						border-width: 0 2px 2px 0
+						transform: rotate(45deg)
+			&_droplist
+				margin-top: 20px
+				margin-bottom: 35px
+				max-height: 270px
+				font-family: $defoult-font
+				font-weight: 100
+				font-size: 16px
+				+r(420)
+					font-size: 14px
+	.close
+		display: block
+		text-align: right
+		font-size: 24px
+		padding-right: 20px
+	.button
+		margin-top: 10px
+		margin-bottom: 20px
+.modal_checkbox
+	display: block
+	position: relative
+	cursor: pointer
+	user-select: none
+	font-size: 12px
+	color: #7b818a
+	line-height: 16px
+	padding-top: 10px
+	text-align: center
+	width: 280px
+	margin: 0 auto
+
+.close-servises
+	font-size: 30px
+	color: red
+	position: absolute
+	top: 10px
+	right: 20px
+	z-index: 100

@@ -1,0 +1,169 @@
+.second-screen ,.modal-servises
+	padding-top: 80px
+	position: relative
+	width: 100%
+	min-height: 884px
+	margin-left: -15px
+	background: url("../img/bg-services.png") -15% no-repeat
+	background-size: cover
+	margin-right: -15px
+	+r(1199)
+		margin-right: 0
+		margin-left: 0
+	+r(992)
+		padding-top: 0
+		padding-bottom: 40px
+	.services
+		display: block
+		background-color: rgb(0, 36, 124)
+		margin-right: 10px
+		color: #ffffff
+		+r(1199)
+			margin-right: 0
+
+		&__block
+			display: flex
+			width: 100%
+			position: relative
+			+r(992)
+				text-align: center
+			+r(545)
+				flex-direction: column
+
+			&_left,&_right
+				width: 50%
+				margin: 87px 0
+				+r(545)
+					width: 100%
+				+r(545)
+					margin: 0
+
+			&_left
+				margin-left: 60px
+				margin-right: 10px
+				+r(1200)
+					margin-left: 10px
+				+r(998)
+					margin-left: 60px
+				+r(767)
+					margin-left: 10px
+
+			&_right
+				margin-right: 60px
+				margin-left: 10px
+				+r(1200)
+					margin-right: 10px
+				+r(998)
+					margin-right: 60px
+				+r(767)
+					margin-right: 10px
+
+		&__elem
+			padding: 22px 20px
+			width: 250px
+			margin-bottom: 11px
+			&:last-child
+				margin-bottom: 0
+			img
+				width: 45px
+				height: 45px
+				margin-bottom: 15px
+			p
+				font-size: 20px
+				line-height: 22px
+				font-family: $medium-font
+				letter-spacing: -0.01em
+				margin-bottom: 3px
+				&:last-child
+					font-size: 16px
+					line-height: 20px
+					font-family: $defoult-font
+					color: #7b818a
+			&:hover, &:focus
+				background: #ffffff
+				border-radius: 8px
+				p
+					color: $main-color
+					&:last-child
+						color: #7b818a
+			+r(545)
+				margin: 0 auto
+	.services-text
+		padding-top: 106px
+		margin-left: 40px
+		+r(1199)
+			margin-left: 0
+			padding-top: 40px
+			padding-bottom: 0
+		+r(575)
+			padding: 30px 20px 0
+		h3
+			font-size: 36px
+			line-height: 39px
+			letter-spacing: -0.01em
+			font-family: $light-font
+			font-weight: 100
+			+r(992)
+				text-align: center
+			+r(575)
+				font-size: 24px
+		strong
+			display: block
+			font-size: 24px
+			font-family: $light-itali-font
+			font-weight: 100
+			color: #7b818a
+			line-height: 40px
+			letter-spacing: -0.012em
+			position: relative
+			+r(992)
+				text-align: center
+			+r(575)
+				font-size: 20px
+			&::before
+				background: #03a6f1
+				content: ''
+				width: 65px
+				height: 8px
+				position: absolute
+				bottom: -32px
+				border-radius: 15px
+				+r(992)
+					left: 50%
+					transform: translateX(-50%)
+		p
+			margin-top: 60px
+			font-size: 16px
+			line-height: 30px
+			color: #7b818a
+			letter-spacing: -0.01em
+
+.modal-servises
+	background: #ffffff
+	width: 90%
+	margin: 0 auto
+	//left: 50%
+	//transform: translateX(-50%)
+	padding: 15px
+	min-height: auto
+	+r(1200)
+		width: 100%
+	+r(430)
+		width: 100%
+	.services-text
+		padding-top: 50px
+	.services
+		&__block
+			+r(998)
+				display: none
+		&__elem
+			position: relative
+			+r(430)
+				width: 300px
+			+r(370)
+				width: 230px
+	&__button
+		margin: 30px auto
+		width: 300px
+		+r(425)
+			width: 190px

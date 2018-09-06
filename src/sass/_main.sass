@@ -1,0 +1,215 @@
+body, html
+	display: block
+	position: relative
+	min-width: 320px
+	font-family: $defoult-font
+	font-size: 16px
+	font-weight: 400px
+	min-height: 3000px
+	overflow-x: hidden
+
+
+*
+	margin: 0
+	padding: 0
+	::before, ::after
+		box-sizing: border-box
+a,
+a:focus,
+a:hover
+	outline: none
+	text-decoration: none
+ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+.container
+	padding-right: 0
+	padding-left: 0
+input
+	border-radius: 0
+	box-shadow: none
+	appearance: none
+input[type="text"], input[type="email"]
+	outline: none
+	box-shadow: none
+	border-radius: 0
+	-moz-border-radius: 0
+	-webkit-border-radius: 0
+	-webkit-appearance: none
+	-moz-appearance: none
+	&:focus:required:invalid
+		border-color: $main-color
+		outline: none
+		box-shadow: none
+		-webkit-appearance: none
+	&:required:valid
+		border-color: #03a6f1
+		outline: none
+		box-shadow: none
+		-webkit-appearance: none
+	&::placeholder
+		color: $main-color
+		font-size: 16px
+		line-height: 1
+		font-weight: 400
+
+
+.button
+	border-radius: 8px
+	background-color: rgb(237, 28, 36)
+	box-shadow: 7.5px 12.99px 25px 0px rgba(237, 28, 36, 0.2)
+	width: 190px
+	height: 48px
+	text-align: center
+	font-family: $bold-font
+	color: #fff
+	letter-spacing: 0.02em
+	cursor: pointer
+	display: block
+	transition: all .3s
+	&:hover
+		transform: translateY(3px)
+		background-color: rgb(3, 166, 241)
+		box-shadow: 10px 10px 25px 0px rgba(3, 166, 241, 0.2)
+		transition: all .3s
+	a
+		padding: 13px
+		color: #fff
+		display: block
+
+	&_long
+		width: 420px
+		height: 72px
+		font-size: 20px
+		line-height: 42px
+		letter-spacing: 0
+		+r(1200)
+			width: 400px
+		+r(992)
+			margin: 0 auto
+		+r(450)
+			width: 320px
+			margin: 0 auto
+			a
+				font-size: 16px
+		+r(370)
+			width: 280px
+			a
+				font-size: 14px
+	&_footer
+		margin-top: 40px
+		margin-left: 60px
+		width: 180px
+.logo
+	padding-top: 10px
+	display: inline-block
+	text-transform: uppercase
+	width: 160px
+	font-size: 32px
+	font-family: $light-font
+	line-height: 15px
+	margin-left: -2px
+	letter-spacing: -0.01em
+	strong
+		display: inline-block
+		font-size: 10px
+		color: $info-color-defoult
+		letter-spacing: 0.1em
+		padding-left: 1px
+		width: 170px
+		padding-top: 10px
+		+r(425)
+			padding-left: 3px
+	a
+		color: #222222
+		display: block
+	&_footer
+		margin-left: 8px
+		a
+			color: #ffffff
+		+r(610)
+			margin-bottom: 20px
+			margin-left: 0
+.info
+	h4
+		font-family: $light-font
+		font-size: 36px
+		font-weight: 100
+		margin-bottom: 56px
+		letter-spacing: -0.01em
+		position: relative
+		&::before
+			background: #03a6f1
+			content: ''
+			width: 65px
+			height: 8px
+			position: absolute
+			bottom: -32px
+			border-radius: 15px
+			+r(992)
+				left: 50%
+				transform: translateX(-50%)
+		+r(992)
+			text-align: center
+		+r(600)
+			font-size: 24px
+	p
+		max-width: 695px
+		font-size: 16px
+		line-height: 28px
+		color: #7b818a
+		margin-bottom: 55px
+		+r(1199)
+			max-width: none
+		+r(992)
+			margin-bottom: 30px
+		+r(425)
+			margin-bottom: 20px
+	&_reviews
+		padding-top: 22px
+		padding-left: 2px
+		h4
+			letter-spacing: 0.01em
+
+.my-mfp-zoom-in
+  .zoom-anim-dialog
+    opacity: 0
+    -webkit-transition: all 0.2s ease-in-out
+    -moz-transition: all 0.2s ease-in-out
+    -o-transition: all 0.2s ease-in-out
+    transition: all 0.2s ease-in-out
+    -webkit-transform: scale(0.8)
+    -moz-transform: scale(0.8)
+    -ms-transform: scale(0.8)
+    -o-transform: scale(0.8)
+    transform: scale(0.8)
+  &.mfp-ready .zoom-anim-dialog
+    opacity: 1
+    -webkit-transform: scale(1)
+    -moz-transform: scale(1)
+    -ms-transform: scale(1)
+    -o-transform: scale(1)
+    transform: scale(1)
+  &.mfp-removing .zoom-anim-dialog
+    -webkit-transform: scale(0.8)
+    -moz-transform: scale(0.8)
+    -ms-transform: scale(0.8)
+    -o-transform: scale(0.8)
+    transform: scale(0.8)
+    opacity: 0
+  &.mfp-bg
+    opacity: 0
+    -webkit-transition: opacity 0.3s ease-out
+    -moz-transition: opacity 0.3s ease-out
+    -o-transition: opacity 0.3s ease-out
+    transition: opacity 0.3s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: 0.8
+  &.mfp-removing.mfp-bg
+    opacity: 0
+
+
+
+

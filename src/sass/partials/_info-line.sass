@@ -1,0 +1,65 @@
+.info-line
+	padding-top: 72px
+	padding-bottom: 26px
+	width: 100%
+	position: relative
+	+r(610)
+		padding-top: 10px
+		padding-bottom: 10px
+	.button
+		+r(610)
+			display: none
+	&__wrapper
+		width: 100%
+		display: flex
+		justify-content: space-between
+		align-items: start
+		+r(998)
+			justify-content: space-around
+
+	&__work-schedule, &__address, &__tel
+		position: relative
+		color: $info-color-defoult
+		font-size: 10px
+		padding-left: 30px
+		img
+			width: 13px
+			height: 13px
+			position: absolute
+			left: 0
+			top: 20px
+		&::before
+			content: ''
+			border: 1px rgb(230, 245, 248) solid
+			border-radius: 12px
+			position: absolute
+			width: 23px
+			height: 23px
+			left: -5px
+			top: 15px
+		+r(998)
+			display: none
+	&__work-schedule, &__address
+		p
+			padding-top: 5px
+			color: $main-color
+			font-size: 12px
+			font-family: $medium-font
+			line-height: 16px
+			font-weight: 600
+
+	&__address
+		p
+			padding-top: 2px
+
+	&__tel
+		p
+			padding-top: 5px
+			color: $main-color
+			font-size: 16px
+			font-family: $semibold-font
+			line-height: 16px
+			font-weight: 600
+		&::before
+			background: url("../img/call-answer.svg") no-repeat center
+

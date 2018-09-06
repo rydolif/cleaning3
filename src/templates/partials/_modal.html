@@ -1,0 +1,142 @@
+<div id="modal-form" class="mfp-hide white-popup-block modal-form zoom-anim-dialog">
+  <p><a class="popup-modal-dismiss close" href="#">x</a></p>
+  <h5>
+    Оставьте заявку,<br>
+    <strong>мы свяжемся с Вами</strong>
+  </h5>
+  <form action="sendmail.php" method="post">
+    <input type="hidden" name="project_name" value="cleaning3">
+    <input type="hidden" name="admin_email" value="sparrowvladislav@gmail.com">
+    <input type="hidden" name="form_subject" value="Заявка с формы">
+    <div class="main-form__form_wrapper d-flex flex-column align-items-center">
+
+      <input class="main-form__form_main focus_contact" type="text" name="name" placeholder="Введите Имя" required >
+      <input class="main-form__form_main" type="email" name="email" placeholder="Введите E-mail" required >
+      <select class=main-form__form_droplist"" name="droplist" required>
+        <option value="Услуга не выбрана">Выберете интересующую вас услугу</option>
+        <option value="Клининг">Клининг</option>
+        <option value="Експлуатация">Експлуатация</option>
+        <option value="Пожарная безопасность">Пожарная безопасность</option>
+        <option value="Энергосети">Энергосети</option><
+        <option value="Водоснабжение">Водоснабжение</option>
+      </select>
+
+    </div>
+    <div class="main-form__form_flex d-flex flex-column align-items-center">
+
+    <button type="submit" class="button" name="submit">Отправить заявку</button>
+    <label class="modal_checkbox">
+      <input type="checkbox" name="agree" checked required>
+      Согласен с условиями по обработке персональных
+      даных и политике конфиденциальности
+    </label>
+    </div>
+  </form>
+</div>
+
+
+<div id="modal-servises" class="mfp-hide white-popup-block modal-servises zoom-anim-dialog">
+  <p><a class="popup-modal-dismiss close close-servises" href="#modal-form">x</a></p>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="services">
+            <div class="services__block">
+              <div class="services__block_left">
+                <div class="services__elem">
+                  <img src="../img/brush.svg" alt="svg">
+                  <P>
+                    Широкий спектр
+
+                  </P>
+                  <P>
+                    клининговых работ
+                  </P>
+                </div>
+                <div class="services__elem">
+                  <img src="../img/window.svg" alt="svg">
+                  <P>
+                    Мытье окон и фасадов
+
+                  </P>
+                  <P>
+                    методом промышлегого
+                    альпинизма
+                  </P>
+                </div>
+                <div class="services__elem">
+                  <img src="../img/recycling-truck.svg" alt="svg">
+                  <P>
+                    Вывоз
+
+                  </P>
+                  <P>
+                    снега и мусора
+                  </P>
+                </div>
+              </div>
+              <div class="services__block_right">
+                <div class="services__elem">
+                  <img src="../img/cleaning-service.svg" alt="svg">
+                  <P>
+                    Предоставление
+                  </P>
+                  <P>
+                    постоянного обслуживания
+                  </P>
+                </div>
+                <div class="services__elem">
+                  <img src="../img/icicles1.svg" alt="svg">
+                  <P>
+                    Очистка кровли
+
+                  </P>
+                  <P>
+                    от снега и сосулек в зимний
+                    период
+                  </P>
+                </div>
+                <div class="services__elem">
+                  <img src="../img/guarantee.svg" alt="svg">
+                  <P>
+                    Гарантия
+                  </P>
+                  <P>
+                    высокого качества
+                  </P>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="services-text">
+            <h3 class="js-data-title-inner">
+              Оказываем услуги
+              <br>
+              по клинингу и химчистке
+            </h3>
+            <strong class="js-data-sub-title-inner">
+              квартир, коттеджей и офисов
+            </strong>
+
+            <p class="js-data-descripteon-inner">
+              Наша клининговая компания предлагает услуги по уборка
+              внутренних помещений, уборке прилегающей территории,
+              мытью окон и фасадов методом промыш- ленного альпинизма,
+              очистке кровли от снега и сосулек в зимний период,
+              а также вывоза снега и мусора
+            </p>
+
+            <div class="button modal-servises__button">
+              <a class="js-data-link-inner" href="#">Подробниее</a>
+            </div>
+            <div class="button js_this_close modal-servises__button">
+              <a class="popup-modal" href="#modal-form">Оформить заявку</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

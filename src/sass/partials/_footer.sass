@@ -1,0 +1,129 @@
+.footer
+	width: 100%
+	padding-top: 100px
+	position: relative
+	+r(992)
+		padding-top: 0
+
+	#map
+		height: 400px
+	&__contacts
+		position: absolute
+		background: #ffffff
+		width: 370px
+		height: 370px
+		right: 478px
+		top: 180px
+		padding: 50px
+		box-shadow: 7.5px 12.99px 30px 0px rgba(51, 51, 51, 0.1);
+		+r(1200)
+			right: 100px
+		+r(992)
+			top: 110px
+		+r(610)
+
+			position: relative
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			width: 100%
+			padding-top: 40px
+			padding-bottom: 40px
+			height: 100%
+		h6
+			font-size: 36px
+			font-family: $light-font
+			font-weight: 100
+			line-height: 24px
+			margin-bottom:  56px
+			+r(992)
+				text-align: center
+			+r(425)
+				font-size: 24px
+				margin-bottom: 20px
+		p
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				width: 12px
+				height: 12px
+				top: 5px
+				left: 0
+
+			&:nth-of-type(1)
+				font-size: 18px
+				font-family: $semibold-font
+				font-weight: 700
+				padding-left: 26px
+				margin-bottom: 19px
+				a
+					color: $main-color
+				&:before
+					background: url("/img/call-answer.svg") left top no-repeat
+					background-size: cover
+			&:nth-of-type(2)
+				font-family: $medium-font
+				font-size: 16px
+				font-weight: 500
+				padding-left: 21px
+				padding-right: 30px
+				line-height: 24px
+				margin-bottom: 24px
+				a
+					color: #7b818a
+				&:before
+					background: url("/img/placeholder-filled-point.svg") left top no-repeat
+					background-size: cover
+			&:nth-of-type(3)
+				color: blue
+				font-family: $medium-font
+				font-size: 16px
+				font-weight: 500
+				padding-left: 24px
+				padding-right: 30px
+				line-height: 24px
+				a
+					color: #7b818a
+				&:before
+					background: url("/img/blue-envelope.svg") left top no-repeat
+					background-size: cover
+
+	&__nav
+		padding-top: 66px
+		min-height: 240px
+		background: $main-color
+		padding-left: 20px
+		+r(610)
+			padding-top: 20px
+			padding-left: 0
+		&_wrapper
+			width: 100%
+			display: flex
+			align-items: center
+			justify-content: space-between
+			+r(1200)
+				justify-content: space-between
+			+r(610)
+				flex-direction: column
+	.work-schedule
+		font-size: 10px
+		font-family: $medium-font
+		font-weight: 500
+		color: #576b9c
+		line-height: 20px
+		padding-top: 40px
+		margin-left: 70px
+		p
+			color: #a0aed0
+			font-size: 12px
+		+r(1200)
+			display: none
+
+	.button_footer
+		margin-right: 20px
+		+r(998)
+			margin: 5px 20px 10px 0
+		+r(767)
+			display: none
